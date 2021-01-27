@@ -15,7 +15,7 @@
     margin: 0 auto ;
   }
   .pluscontainer {
-    width: 30px;
+    width: auto;
     height:30px;
     display:flex;
     justify-content:center;
@@ -23,7 +23,7 @@
     margin: auto;
   }
   .mincontainer {
-    width: 30px;
+    width: auto;
     height:30px;
     display:flex;
     justify-content:center;
