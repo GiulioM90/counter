@@ -11,7 +11,8 @@
 </head>
 <body>
     <div class="card" style="width: 18rem;">
-        <img src="abaco.jpg" class="card-img-top" alt="...">
+      <h1>Conta con me!</h1>
+        <img src="abaco.jpg" class="card-img-top" alt="immagine_abaco">
         <div class="card-body">
           <h5 class="card-title">  <div class= "pageContainer"><div id="number">
             0
@@ -21,20 +22,43 @@
 
               
           <p class="card-text" >Premi sui pulsanti per aggiungere o togliere un numero.</p>
-          <div href="" class="btn btn-primary " >   <div class="pluscontainer" id="pluscontainer">
+          <div href="" class="btn btn-primary m-1 " id="pluscontainer">   <div class="pluscontainer" id="">
             <div>
               +
               </div></div></div>
-          <div href="" class="btn btn-primary">  <div class="mincontainer" id="mincontainer"> 
+          <div href="" class="btn btn-primary" id="mincontainer">  <div class="mincontainer" id=""> 
             <div>
               -
               </div></div></div>
+              <input class="m-1" type="Button" value="Ascoltami!" onclick="myFunction()">
             </div>
         </div>
         </div>
+
+        <div class="container">
+          <div class="d-none"> Language :</div><br /> <!-- qui potrei trasformare l'input in select con optioni che richiamano i valori prodotto dal JS id="details" dtltxt-->
+           <input type="text" id="lang" value="it_IT" class="d-none">
+           <br />
+       
+           <br />
+           Rate 0-7 :<br />
+           <input type="range" min="0" max="7" value = "0.7" step="0.1" id="rate" >
+          
+           <br />
+           Pitch 0-2 :<br />
+           <input type="range" min="0" max="2" value = "1" step="1" id="pitch"> <!--  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range-->
+       
+           <br />
+           Volume 0-1 :<br />
+           <input type="range" min="0" max="1" step="0.1" value ="0.6" id="volume" >
+           <br /><br />
+           <!--<div id="details" style="display:block;">Language List</div>-->
+           <textarea id="details" rows="12" cols="50" style="display:none;">Language List</textarea>
+       
+         </div>
       </div>    
-
-
+     
+      
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
